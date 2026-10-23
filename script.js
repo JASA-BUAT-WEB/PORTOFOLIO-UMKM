@@ -248,9 +248,5 @@ navMenu.querySelectorAll("a").forEach(link => {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-document.getElementById("phoneDisplay").textContent =
-  WHATSAPP_NUMBER === "6287817513538"
-    ? "Atur nomor di script.js"
-    : "+" + WHATSAPP_NUMBER;
-
+document.getElementById("phoneDisplay").textContent ="+" + WHATSAPP_NUMBER;
 renderProducts();
