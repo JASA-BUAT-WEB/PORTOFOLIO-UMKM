@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dapur Lestari, camilan tradisional berkualitas untuk keluarga dan oleh-oleh.">
+  <title>Dapur Lestari | Camilan Tradisional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="#home" class="brand">
+    <span class="brand-icon">✿</span>
+    <span>
+      <strong>Dapur Lestari</strong>
+      <small>Camilan Tradisional, Rasa Modern</small>
+    </span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+
+  <nav id="navMenu">
+    <a href="#home">Beranda</a>
+    <a href="#produk">Produk</a>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <button class="cart-button" id="cartButton">
+    🛒 Keranjang <span id="cartCount">0</span>
+  </button>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="eyebrow">CAMİLAN KHAS INDONESIA</span>
+      <h1>Rasa Tradisional untuk Hari yang Lebih Baik.</h1>
+      <p>
+        Nikmati camilan pilihan dengan cita rasa istimewa.
+        Cocok untuk keluarga, oleh-oleh, dan teman santai.
+      </p>
+      <a class="btn btn-green" href="#produk">Jelajahi Produk ↗️</a>
+      <div class="hero-note">✦ Dibuat dengan sepenuh hati</div>
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1000&q=85"
+        alt="Aneka camilan untuk menemani waktu santai">
+      <div class="image-label">
+        <strong>Rasa yang bikin rindu</strong>
+        <span>Teman setiap momen</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div><span>✦</span><p><strong>Produk Pilihan</strong><small>Kualitas diutamakan</small></p></div>
+    <div><span>♧</span><p><strong>Rasa Istimewa</strong><small>Cocok untuk keluarga</small></p></div>
+    <div><span>▣</span><p><strong>Pemesanan Mudah</strong><small>Langsung via WhatsApp</small></p></div>
+    <div><span>♡</span><p><strong>Pelayanan Ramah</strong><small>Siap membantu Anda</small></p></div>
+  </section>
+
+  <section class="products section" id="produk">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">PILIHAN FAVORIT</span>
+        <h2>Produk Kami</h2>
+        <p>Temukan camilan favorit untuk menemani harimu.</p>
+      </div>
+      <label class="search-box">
+        <span>⌕</span>
+        <input id="searchInput" type="search" placeholder="Cari produk...">
+      </label>
+    </div>
+
+    <div class="category-list" id="categories">
+      <button class="category active" data-category="Semua">Semua</button>
+      <button class="category" data-category="Kue">Kue</button>
+      <button class="category" data-category="Tradisional">Tradisional</button>
+      <button class="category" data-category="Gorengan">Gorengan</button>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+    <p class="empty-state" id="emptyState" hidden>Produk tidak ditemukan. Coba kata kunci lain.</p>
+  </section>
+
+  <section class="about section" id="tentang">
+    <div class="about-image">
+      <img
+        src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85"
+        alt="Aneka roti dan camilan">
+      <span class="about-stamp">Dibuat dengan cinta ♡</span>
+    </div>
+    <div class="about-content">
+      <span class="eyebrow">CERITA KAMI</span>
+      <h2>Menghadirkan Rasa, Menjaga Cerita.</h2>
+      <p>
+        Dapur Lestari adalah contoh usaha camilan yang mengangkat
+        cita rasa tradisional dengan sentuhan modern. Kami percaya,
+        camilan sederhana bisa menghadirkan kebahagiaan.
+      </p>
+      <div class="about-points">
+        <div><span>✓</span><p><strong>Pilihan Produk</strong><small>Aneka camilan untuk berbagai momen</small></p></div>
+        <div><span>✓</span><p><strong>Praktis Dipesan</strong><small>Hubungi kami untuk informasi produk</small></p></div>
+        <div><span>✓</span><p><strong>Ramah Pelanggan</strong><small>Melayani pertanyaan dengan baik</small></p></div>
+      </div>
+      <a href="#kontak" class="btn btn-dark">Hubungi Kami ↗️</a>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div>
+      <span class="eyebrow">ADA YANG INGIN DITANYAKAN?</span>
+      <h2>Yuk, ngobrol dengan kami!</h2>
+      <p>Tanyakan produk, harga, dan pemesanan melalui WhatsApp.</p>
+    </div>
+    <button class="btn btn-light" id="contactButton">Chat WhatsApp ↗️</button>
+  </section>
+</main>
+
+<footer id="kontak">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a href="#home" class="brand">
+        <span class="brand-icon">✿</span>
+        <span><strong>Dapur Lestari</strong><small>Camilan Tradisional, Rasa Modern</small></span>
+      </a>
+      <p>Contoh website UMKM yang dirancang untuk memudahkan pelanggan mengenal produk dan menghubungi penjual.</p>
+    </div>
+    <div>
+      <h3>Navigasi</h3>
+      <a href="#home">Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang Kami</a>
+    </div>
+    <div>
+      <h3>Hubungi Kami</h3>
+      <p>WhatsApp: <span id="phoneDisplay">Nomor belum diatur</span></p>
+      <p>Lokasi: Indonesia</p>
+      <button class="footer-link" id="footerContact">Hubungi penjual ↗️</button>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Dapur Lestari</span>
+    <span>Website demo untuk portofolio UMKM.</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
